@@ -8,6 +8,6 @@ export class UserprofileService {
   constructor(private http: HttpClient) {}
 
   getproducts(): Observable<any> {
-    return this.http.get(this._producturl);
+    return this.http.get<userprofile>(this._producturl);
   }
 }
