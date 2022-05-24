@@ -15,8 +15,8 @@ export class AppComponent {
     this.getDataServer();
   }
   getDataServer() {
-    this.UserprofileService.getproducts().subscribe((data: userprofile) =>
-      console.log('data=', data[0].address1)
+    this.UserprofileService.getproducts().subscribe((data: userprofile[]) =>
+      console.log('data=', data[0])
     );
   }
 }
